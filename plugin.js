@@ -52,8 +52,8 @@ define(function () {
     return {
 
         name: "Torchlight",
-        author: "Christian Muise",
-        email: "christian.muise@gmail.com",
+        author: "Jörg Hoffmann (torchlight) Christian Muise (plugin)",
+        email: "hoffmann@cs.uni-saarland.de,christian.muise@gmail.com",
         description: "Calls the torchlight software to analyze classical problems.",
 
         // This will be called whenever the plugin is loaded or enabled
