@@ -10,7 +10,7 @@ function analyzePlan() {
     $('#plannerURLInput').show();
     window.toastr.info('Running analysis...');
 
-    $.ajax( {url: "http://torchlight.haz.ca/solve",
+    $.ajax( {url: "https://torchlight.haz.ca/solve",
              type: "POST",
              contentType: 'application/json',
              data: JSON.stringify({"domain": domText, "problem": probText})})
@@ -35,7 +35,7 @@ function showAnalysis(output) {
         window.tl_analyses[editor_name] = output;
         var plan_html = '';
         plan_html += '<div class=\"plan-display\">\n';
-        plan_html += '<h2>Torchlight Output (<a target=\"_blank\" href=\"http://editor.planning.domains/TorchLight-README.txt\">readme</a>)</h2>\n';
+        plan_html += '<h2>Torchlight Output (<a target=\"_blank\" href=\"https://editor.planning.domains/TorchLight-README.txt\">readme</a>)</h2>\n';
         plan_html += '<pre class=\"plan-display-action well\">\n';
         plan_html += output;
         plan_html += '</pre>';
